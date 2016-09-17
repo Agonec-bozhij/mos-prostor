@@ -1,0 +1,275 @@
+﻿body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #074a18;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.logo-img {
+    width: 263px;
+}
+.header-phone {
+    font-size: 22px;
+}
+.navbar-nav {
+    width: 100%;
+}
+.navbar-nav > li {
+    float: none;
+    display: table-cell;
+    width: 1%;
+    text-align: center;
+    font-size: 16px;
+    border-right: 1px solid #074a18;
+    border-left: 1px solid #fff;
+}
+.navbar-nav > li:nth-child(1) {
+    border-left: 1px solid #074a18;
+}
+.navbar-default {
+    background-color: #bbd253;
+    border-top: 1px solid rgb(7, 74, 24);
+    border-bottom: 1px solid rgb(7, 74, 24);
+    box-shadow: 0 0 3px rgb(7, 74, 24);
+    border-radius: 0;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #074a18;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #074a18;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #bbd253;
+}
+.object-search .form-group {
+    float:right;
+}
+
+/** Стили для постраничного вывода коттеджей **/
+
+.position-list { display: block; width: 100%;}
+.single-position-list {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 2px #AEB5BE;
+    margin: 15px auto;
+    height: 270px;
+}
+.position-images {
+    width: 270px;
+    height: 270px;
+    display: inline-block;
+}
+.position-right-content {
+    width: 67%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+}
+.position-adress {
+    width:410px!important;
+}
+.position-right-content div {
+    display: inline-block;
+    width:120px;
+    vertical-align: middle;
+}
+.description {
+    clear: both;
+    display: block;
+    width:100%!important;
+    margin-top: 40px;
+}
+.description-cottages {
+    clear: both;
+    display: block;
+    width:100%!important;
+    margin-top: 10px;
+}
+.position-url {
+    clear: both;
+    display: block;
+    width:100%!important;
+    margin-top: 50px;
+}
+.position-cottage-url {
+    clear: both;
+    display: block;
+    width:100%!important;
+    margin-top: 10px;
+}
+.position-url a{
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+    font-weight: 600;
+}
+.position-url a:hover {
+    color: #b6d553;
+}
+.position-cottage-url a{
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+    font-weight: 600;
+}
+.position-cottage-url a:hover {
+    color: #b6d553;
+}
+#mymap {
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 400px;
+    z-index: 5;
+    box-shadow: 0 2px 4px 2px #AEB5BE;
+}
+
+/** модалка в объектах **/
+
+.inner-object-modal .modal-content {
+    border-radius: 0;
+}
+.inner-object-modal .modal-header {
+    background-color: #57953f;
+    color: #fff;
+}
+.inner-object-modal .modal-body {
+    padding-left: 0;
+}
+.inner-object-modal input, .inner-object-modal textarea, .inner-object-modal button {
+    border-radius: 0;
+}
+.success-message {
+    color: #fff;
+    background-color: #57953f;
+    display: none;
+    margin-left: 15px;
+    border-radius: 0;
+}
+/** конец модалки **/
+
+/** анимашка загрузки при отправке **/
+.loader-wrap {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    background-color: rgba(255,255,255,0.7);
+    display: none;
+}
+.loader-text {
+    color: #000;
+    position: absolute;
+    bottom: 25%;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+}
+.loader-line{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    clip: rect(0, 25px, 50px, 0);
+    border: 4px solid steelblue;
+    border-right-color: transparent;
+    position: absolute;
+    -webkit-animation: 1s loaderRound linear infinite;
+    -moz-animation: 1s loaderRound linear infinite;
+    -ms-animation: 1s loaderRound linear infinite;
+    animation: 1s loaderRound linear infinite;
+}
+@-webkit-keyframes loaderRound {
+    0% {transform: rotate(0deg); -webkit-transform: rotate(0deg);}
+    100% {transform: rotate(360deg); -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes loaderRound {
+    0% {-moz-transform: rotate(0deg);}
+    100% {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes loaderRound {
+    0% {transform: rotate(0deg); -ms-transform: rotate(0deg);}
+    100% {transform: rotate(360deg); -ms-transform: rotate(360deg);}
+}
+@keyframes loaderRound {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+#contents {
+    -webkit-animation: .7s ease-in loadedPage 1;
+    -o-animation: .7s ease-in loadedPage 1;
+    animation: .7s ease-in loadedPage 1;
+}
+@-webkit-keyframes loadedPage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-moz-keyframes loadedPage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-o-keyframes loadedPage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes loadedPage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/** конец анимашки **/
+
+/** единичный объект **/
+.fotorama-block {
+    max-height: 520px;
+}
+.fotorama__stage {
+    max-height: 420px;
+}
+.call-customer-modal {
+    border-radius: 0;
+    background-color: #57953f;
+    color: #fff;
+}
+
+.position-info h1 {
+    font: 24px "PT Sans",Arial,sans-serif;
+    text-shadow: #666 0.1px 0.1px 0.1px;
+}
+.price {
+    font: 20px "PT Sans",Arial,sans-serif;
+}
+.info {
+    font: 14px "PT Sans",Arial,sans-serif;
+}
+/** конец единичного бъекта **/
+
+/** поиск объектов **/
+.filters .form-group {
+    width: 100%;
+}
+/** конец поиска объектов **/
+
+/** Футер **/
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+/** конец футера (вы видели конец футера? так вот это он) **/
